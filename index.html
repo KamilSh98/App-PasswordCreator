@@ -11,17 +11,19 @@
     <div class="container">
         <h1>Your Password: </h1>
         <div class="box-for-password">
-            <p id="passwordBox"></p>
+            <p class="passwordBox" id="passwordBox"></p>
         </div>
-        <p>Password Length<input type="text" name="" id=""></p>
-        <p>Contain Lowercase Letters<input type="checkbox" name="" id=""></p>
-        <p>Contain Uppercase Letters<input type="checkbox" name="" id=""></p>
-        <p>Contain Numbers<input type="checkbox" name="" id=""></p>
-        <p>Contain Symbols<input type="checkbox" name="" id=""></p>
+        <p class="form">Password Length<input type="number" id="lenght" placeholder="From 1 to 25"></p>
+        <p class="form">Contain Lowercase Letters<input type="checkbox" id="lowercase"></p>
+        <p class="form">Contain Uppercase Letters<input type="checkbox" id="uppercase"></p>
+        <p class="form">Contain Numbers<input type="checkbox" id="numbers"></p>
+        <p class="form">Contain Symbols<input type="checkbox" id="symbols"></p>
+        <p class="error" id="error"></p>
         <button id="create">Create Your Password</button>
     </div>
 
 
     <script src="script.js"></script>
+    <script src="copybutton.js"></script>
 </body>
 </html>

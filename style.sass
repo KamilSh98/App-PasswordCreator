@@ -1,9 +1,11 @@
+$primary-color: #6f4c39
+$secondary-color: #f9f0e7
+
 body
     margin: 0 
     padding: 0
     box-sizing: border-box
-    background: radial-gradient(circle, rgba(205,195,146,1) 35%, rgba(232,229,218,1) 75%)
-    
+    background-image: url("bg4.jpg")
     .container
         position: absolute
         left: 50%
@@ -11,24 +13,50 @@ body
         transform: translate(-50%, -50%)
         width: 30vw
         height: 50vh
-        border: 15px double #bcb281
+        border: 10px groove $primary-color 
         border-radius: 40px
-        background: #cdc392
+        background: linear-gradient(127deg, rgba(233,214,200,255) 45%, rgba(243,233,223,255) 85%)
         h1
             text-align: center
+            color: $primary-color
+            font-weight: 1000
         .box-for-password
-            border: 3px double #bcb281
+            border: 4px double $primary-color
             width: 80%
             height: 3.9rem
             margin: 0 auto
-            background: #e8e5da
-            p
+            background: $secondary-color
+            position: relative
+            p.passwordBox
                 font-size: 1.3rem
-        button
+                text-align: center
+                background: $secondary-color
+                color: $primary-color
+        #create
             width: 70%
             height: 5vh
             font-size: 1.2rem
-            margin: 2vh 15% 0 15%
-            background: #e8e5da
-        p
-            margin-left: 10%
+            font-weight: 700
+            color: $primary-color
+            margin: 0 15% 0 15%
+            background: $secondary-color
+            border: 3px solid $primary-color
+            cursor: pointer
+        #create:hover
+            background: $primary-color
+            border: 3px solid $primary-color
+            color: $secondary-color
+            letter-spacing: 0.5px
+        p.form
+            text-align: center
+            color: $primary-color
+            font-weight: 800
+            input
+                margin-left: 2%
+                border: 2px double $primary-color
+                color: $primary-color
+                cursor: pointer
+        .error
+            color: red
+            text-align: center
+            text-decoration: underline

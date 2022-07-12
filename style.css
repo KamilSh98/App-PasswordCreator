@@ -3,7 +3,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: radial-gradient(circle, #cdc392 35%, #e8e5da 75%);
+  background-image: url("bg4.jpg");
 }
 
 body .container {
@@ -14,36 +14,68 @@ body .container {
           transform: translate(-50%, -50%);
   width: 30vw;
   height: 50vh;
-  border: 15px double #bcb281;
+  border: 10px groove #6f4c39;
   border-radius: 40px;
-  background: #cdc392;
+  background: linear-gradient(127deg, #e9d6c8 45%, #f3e9df 85%);
 }
 
 body .container h1 {
   text-align: center;
+  color: #6f4c39;
+  font-weight: 1000;
 }
 
 body .container .box-for-password {
-  border: 3px double #bcb281;
+  border: 4px double #6f4c39;
   width: 80%;
   height: 3.9rem;
   margin: 0 auto;
-  background: #e8e5da;
+  background: #f9f0e7;
+  position: relative;
 }
 
-body .container .box-for-password p {
+body .container .box-for-password p.passwordBox {
   font-size: 1.3rem;
+  text-align: center;
+  background: #f9f0e7;
+  color: #6f4c39;
 }
 
-body .container button {
+body .container #create {
   width: 70%;
   height: 5vh;
   font-size: 1.2rem;
-  margin: 2vh 15% 0 15%;
-  background: #e8e5da;
+  font-weight: 700;
+  color: #6f4c39;
+  margin: 0 15% 0 15%;
+  background: #f9f0e7;
+  border: 3px solid #6f4c39;
+  cursor: pointer;
 }
 
-body .container p {
-  margin-left: 10%;
+body .container #create:hover {
+  background: #6f4c39;
+  border: 3px solid #6f4c39;
+  color: #f9f0e7;
+  letter-spacing: 0.5px;
+}
+
+body .container p.form {
+  text-align: center;
+  color: #6f4c39;
+  font-weight: 800;
+}
+
+body .container p.form input {
+  margin-left: 2%;
+  border: 2px double #6f4c39;
+  color: #6f4c39;
+  cursor: pointer;
+}
+
+body .container .error {
+  color: red;
+  text-align: center;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
